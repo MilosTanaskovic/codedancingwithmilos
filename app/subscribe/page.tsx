@@ -1,16 +1,17 @@
 import Image from 'next/image'
 import WidgetSponsor from '@/components/widget-sponsor'
 import WidgetBook from '@/components/widget-book'
-import Avatar01 from '@/public/images/avatar-01.jpg'
-import Avatar02 from '@/public/images/avatar-02.jpg'
-import Avatar03 from '@/public/images/avatar-03.jpg'
-import Avatar04 from '@/public/images/avatar-04.jpg'
-import Avatar05 from '@/public/images/avatar-05.jpg'
+import Avatar01 from '@/public/images/avatar-01.jpeg'
+import Avatar02 from '@/public/images/avatar-02.jpeg'
+import Avatar03 from '@/public/images/avatar-03.jpeg'
+import Avatar04 from '@/public/images/avatar-04.jpeg'
+import Avatar05 from '@/public/images/avatar-05.jpeg'
 import Testimonial01 from '@/public/images/testimonial-01.jpg'
 import Testimonial02 from '@/public/images/testimonial-02.jpg'
+import SubscribeForm from '@/components/subscribe-form'
 
 export const metadata = {
-  title: 'About - DevSpace',
+  title: 'Subscribe - CodeDancingwithMilos',
   description: 'Page description',
 }
 
@@ -74,21 +75,7 @@ export default function Subscribe() {
                 </ul>
                 <div>
                   {/* Subscribe form */}
-                  <form>
-                    <div className="flex flex-col md:flex-row justify-center max-w-xs mx-auto md:max-w-md md:mx-0">
-                      <input
-                        type="email"
-                        className="form-input w-full mb-2 md:mb-0 md:mr-2"
-                        placeholder="Your email"
-                        aria-label="Your email\u2026"
-                      />
-                      <button className="btn text-white bg-cdwmcp-blue hover:bg-cdwmcp-blue">
-                        Subscribe
-                      </button>
-                    </div>
-                    {/* Success message */}
-                    {/* <p className="text-xs text-slate-500 mt-3 italic">Thanks for subscribing!</p> */}
-                  </form>
+                  <SubscribeForm />
                   <div className="flex items-center mt-5">
                     <div className="inline-flex -space-x-3 -ml-0.5">
                       <Image

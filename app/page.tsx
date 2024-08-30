@@ -8,8 +8,8 @@ import WidgetSponsor from '@/components/widget-sponsor'
 import WidgetBook from '@/components/widget-book'
 
 export const metadata = {
-  title: 'Home - DevSpace',
-  description: 'Page description',
+  title: 'Home - CodeDancingwithMilos',
+  description: 'CodeDancing with Milos, home page',
 }
 
 export default async function Home() {
@@ -37,11 +37,11 @@ export default async function Home() {
                 {/* Filters */}
                 <ul className="flex flex-wrap text-sm border-b border-slate-100 dark:border-slate-800">
                   <li className="px-3 -mb-px">
-                    <a className="block py-3 font-medium text-slate-800 dark:text-slate-100 border-b-2 border-sky-500" href="#0">
-                      Coding
+                    <a className="block py-3 font-medium text-slate-800 dark:text-slate-100 border-b-2 border-cdwmcp-blue" href="#0">
+                      React Ecosystem
                     </a>
                   </li>
-                  <li className="px-3 -mb-px">
+                  {/* <li className="px-3 -mb-px">
                     <a className="block py-3 text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300" href="#0">
                       Startups
                     </a>
@@ -55,7 +55,7 @@ export default async function Home() {
                     <a className="block py-3 text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300" href="#0">
                       Indie Hacking
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
 
                 {/* Articles list */}
@@ -66,8 +66,10 @@ export default async function Home() {
                 </div>
               </section>
 
+              {/* 
               <Talks />
-              <FeaturedProjects />
+              <FeaturedProjects /> 
+              */}
 
             </div>
           </div>
@@ -78,8 +80,8 @@ export default async function Home() {
           <div className="space-y-6">
 
             <WidgetNewsletter />
-            <WidgetSponsor />
-            <WidgetBook />
+            {/* <WidgetSponsor />
+            <WidgetBook /> */}
 
           </div>
         </aside>

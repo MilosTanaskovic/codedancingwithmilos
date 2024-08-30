@@ -48,7 +48,7 @@ export default async function SinglePost({ params }: {
           {/* Back */}
           <div className="mb-3">
             <Link
-              className="inline-flex text-sky-500 rounded-full border border-slate-200 dark:border-slate-800 dark:bg-gradient-to-t dark:from-slate-800 dark:to-slate-800/30"
+              className="inline-flex text-cdwmcp-blue rounded-full border border-slate-200 dark:border-slate-800 dark:bg-gradient-to-t dark:from-slate-800 dark:to-slate-800/30"
               href="/"
             >
               <span className="sr-only">Back</span>
@@ -64,13 +64,13 @@ export default async function SinglePost({ params }: {
               <div className="flex items-center justify-between mb-1">
                 {/* Post date */}
                 <div className="text-xs text-slate-500 uppercase">
-                  <span className="text-sky-500">—</span> <PostDate dateString={post.metadata.publishedAt} /> <span className="text-slate-400 dark:text-slate-600">·</span> 4 Min read
+                  <span className="text-cdwmcp-blue">—</span> <PostDate dateString={post.metadata.publishedAt} /> <span className="text-slate-400 dark:text-slate-600">·</span> 4 Min read
                 </div>
                 {/* Share buttons */}
                 <ul className="inline-flex">
                   <li>
                     <a
-                      className="flex justify-center items-center text-slate-400 dark:text-slate-500 hover:text-sky-500 dark:hover:text-sky-500 transition duration-150 ease-in-out"
+                      className="flex justify-center items-center text-slate-400 dark:text-slate-500 hover:text-cdwmcp-blue dark:hover:text-cdwmcp-blue transition duration-150 ease-in-out"
                       href="#0"
                       aria-label="Twitter"
                     >
@@ -81,7 +81,7 @@ export default async function SinglePost({ params }: {
                   </li>
                   <li>
                     <a
-                      className="flex justify-center items-center text-slate-400 dark:text-slate-500 hover:text-sky-500 dark:hover:text-sky-500 transition duration-150 ease-in-out"
+                      className="flex justify-center items-center text-slate-400 dark:text-slate-500 hover:text-cdwmcp-blue dark:hover:text-cdwmcp-blue transition duration-150 ease-in-out"
                       href="#0"
                       aria-label="Facebook"
                     >
@@ -92,7 +92,7 @@ export default async function SinglePost({ params }: {
                   </li>
                   <li>
                     <a
-                      className="flex justify-center items-center text-slate-400 dark:text-slate-500 hover:text-sky-500 dark:hover:text-sky-500 transition duration-150 ease-in-out"
+                      className="flex justify-center items-center text-slate-400 dark:text-slate-500 hover:text-cdwmcp-blue dark:hover:text-cdwmcp-blue transition duration-150 ease-in-out"
                       href="#0"
                       aria-label="Share"
                     >
@@ -105,7 +105,7 @@ export default async function SinglePost({ params }: {
               </div>
               <h1 className="h1 font-aspekta mb-4">{post.metadata.title}</h1>
             </header>
-            <div className="prose text-slate-500 dark:text-slate-400 max-w-none prose-p:leading-normal prose-headings:text-slate-800 dark:prose-headings:text-slate-200 prose-a:font-medium prose-a:text-sky-500 prose-a:no-underline hover:prose-a:underline prose-strong:font-medium prose-strong:text-slate-800 dark:prose-strong:text-slate-100 prose-pre:bg-slate-800 dark:prose-code:text-slate-200">
+            <div className="prose text-slate-500 dark:text-slate-400 max-w-none prose-p:leading-normal prose-headings:text-slate-800 dark:prose-headings:text-slate-200 prose-a:font-medium prose-a:text-cdwmcp-blue prose-a:no-underline hover:prose-a:underline prose-strong:font-medium prose-strong:text-slate-800 dark:prose-strong:text-slate-100 prose-pre:bg-slate-800 dark:prose-code:text-slate-200">
               <CustomMDX source={post.content} />
             </div>
           </article>

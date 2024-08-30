@@ -54,6 +54,7 @@ export default function SideNavigation() {
                   </svg>
                 </Link>
               </li>
+              {/* 
               <li className="py-2">
                 <Link
                   href="/projects"
@@ -68,7 +69,7 @@ export default function SideNavigation() {
                     <path d="M8 3h4V2H8v1ZM6 3V0h8v3h6v12H0V3h6ZM2 5v8h16V5H2Zm14 13v-2h2v4H2v-4h2v2h12Z" />
                   </svg>
                 </Link>
-              </li>
+              </li> 
               <li className="py-2">
                 <Link
                   href="/resume"
@@ -99,6 +100,7 @@ export default function SideNavigation() {
                   </svg>
                 </Link>
               </li>
+              */}
             </ul>
           </nav>
         </div>

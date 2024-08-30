@@ -3,6 +3,7 @@ import Image from "next/image";
 import PostDate from "@/components/post-date";
 
 export default function PostItem({ ...props }) {
+  console.log(props)
   return (
     <article className="py-5 border-b border-slate-100 dark:border-slate-800">
       <div className="flex items-start">
@@ -14,13 +15,13 @@ export default function PostItem({ ...props }) {
           alt={props.metadata.title}
         />
         <div>
-          <div className="text-xs text-slate-500 uppercase mb-1">
-            <span className="text-sky-500">—</span>{" "}
+          <div className="text-xs text-cdwmcp-blue uppercase mb-1">
+            <span className="text-cdwmcp-blue">—</span>{" "}
             <PostDate dateString={props.metadata.publishedAt} />
           </div>
           <h3 className="font-aspekta text-lg font-[650] mb-1">
             <Link
-              className="inline-flex relative hover:text-sky-500 duration-150 ease-out before:scale-x-0 before:origin-center before:absolute before:inset-0 before:bg-sky-200 dark:before:bg-sky-500 before:opacity-30 before:-z-10 before:translate-y-1/4 before:-rotate-2 hover:before:scale-100 before:duration-150 before:ease-in-out"
+              className="inline-flex relative hover:cdwmcp-blue duration-150 ease-out before:scale-x-0 before:origin-center before:absolute before:inset-0 before:bg-sky-300 dark:before:bg-cdwmcp-blue before:opacity-30 before:-z-10 before:translate-y-1/4 before:-rotate-2 hover:before:scale-100 before:duration-150 before:ease-in-out"
               href={`/posts/${props.slug}`}
             >
               {props.metadata.title}
@@ -31,7 +32,7 @@ export default function PostItem({ ...props }) {
               {props.metadata.summary}
             </div>
             <Link
-              className="hidden lg:flex shrink-0 text-sky-500 items-center justify-center w-12 group"
+              className="hidden lg:flex shrink-0 text-cdwmcp-blue items-center justify-center w-12 group"
               href={`/posts/${props.slug}`}
               tabIndex={-1}
             >
