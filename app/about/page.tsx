@@ -3,6 +3,8 @@ import WidgetNewsletter from "@/components/widget-newsletter";
 import WidgetSponsor from "@/components/widget-sponsor";
 //import AboutImg from '@/public/images/about.png'
 import Experience from "@/components/experience";
+import PawelImg from "@/public/images/pawel-checkinski.jpeg";
+import AnastasijaImg from "@/public/images/avatar-03.jpeg";
 
 export const metadata = {
   title: "About - DevSpace",
@@ -52,36 +54,37 @@ export default function About() {
                 </h2>
                 <p>
                   Currently, I’m working as a Software Engineer at{" "}
-                  <b>EuroAccident AB Sweden</b>. Here, I focus on web development,
-                  leveraging technologies like React, GraphQL, and Microsoft
-                  Azure. I’m heavily involved in creating high-performing,
-                  responsive websites, all within an Agile environment. My work
-                  doesn’t stop at coding—I also take pride in leading and
-                  collaborating with cross-functional teams to bring innovative
-                  solutions to life.
+                  <b>EuroAccident AB Sweden</b>. Here, I focus on web
+                  development, leveraging technologies like React, GraphQL, and
+                  Microsoft Azure. I’m heavily involved in creating
+                  high-performing, responsive websites, all within an Agile
+                  environment. My work doesn’t stop at coding—I also take pride
+                  in leading and collaborating with cross-functional teams to
+                  bring innovative solutions to life.
                 </p>
                 <p>
-                  Before joining EuroAccident, I was a <b>Senior Frontend Web
-                  Engineer</b> at <b>Nets AB Sweden</b>, where I played a key role in
-                  developing a custom platform for technical documentation
-                  across the Nexi group. As part of the Relay team, I
-                  contributed to building a next-gen distributed payment
-                  processing system, which was a fantastic experience to dive
-                  deeper into backend technologies and work with a cutting-edge
-                  tech stack on Azure.
+                  Before joining EuroAccident, I was a{" "}
+                  <b>Senior Frontend Web Engineer</b> at <b>Nets AB Sweden</b>,
+                  where I played a key role in developing a custom platform for
+                  technical documentation across the Nexi group. As part of the
+                  Relay team, I contributed to building a next-gen distributed
+                  payment processing system, which was a fantastic experience to
+                  dive deeper into backend technologies and work with a
+                  cutting-edge tech stack on Azure.
                 </p>
                 <p>
-                  My journey into consulting as a <b>Full-Stack JavaScript
-                  Developer</b> with <b>School of Applied Technology</b> allowed me
-                  to tackle diverse projects for clients like Footway AB and
-                  QBank AB. Working with the MERN and JAM stacks, I embraced
-                  Agile methodologies and collaborated closely with my teams
-                  through Scrum, Mob Programming, and Pair Programming. These
+                  My journey into consulting as a{" "}
+                  <b>Full-Stack JavaScript Developer</b> with{" "}
+                  <b>School of Applied Technology</b> allowed me to tackle
+                  diverse projects for clients like Footway AB and QBank AB.
+                  Working with the MERN and JAM stacks, I embraced Agile
+                  methodologies and collaborated closely with my teams through
+                  Scrum, Mob Programming, and Pair Programming. These
                   experiences sharpened my skills and broadened my perspective
                   on web development.
                 </p>
                 <p>
-                  I started my career as a <b>Frontend Web Developer</b> at 
+                  I started my career as a <b>Frontend Web Developer</b> at
                   <b>Svenska Domäner AB Sweden</b>, where I focused on designing
                   and implementing customer-facing features. It was here that I
                   built a strong foundation in web technologies, working with
@@ -110,13 +113,99 @@ export default function About() {
                     href="https://www.linkedin.com/in/codedancingwithmilos/"
                   >
                     LinkedIn
-                  </a>.
+                  </a>
+                  .
                   {/* to chat about projects and ideas. Currently, I'm not taking on
                   freelance projects, but I am open to hearing about potential
                   opportunities, discussing them with you and then potentially
                   collaborating if it's a good fit. */}
                 </p>
               </div>
+            </div>
+          </section>
+          <section className="">
+            {/* Cards */}
+            <div className="grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-5">
+              <a
+                className="rounded-lg border border-slate-200 dark:border-slate-800 dark:bg-gradient-to-t dark:from-slate-800 dark:to-slate-800/30 odd:-rotate-1 even:rotate-1 hover:rotate-0 transition-transform duration-700 hover:duration-100 ease-in-out p-5"
+                href="#0"
+              >
+                <div className="flex flex-col h-full">
+                  <div className="grow">
+                    <Image
+                      className="rounded-full mb-2"
+                      src={PawelImg}
+                      width={40}
+                      height={40}
+                      alt="Pawel"
+                    />
+                    <div className="text-lg font-aspekta font-[650] mb-1">
+                      Pawel Checinski
+                    </div>
+                    <p className="text-sm text-slate-500 dark:text-slate-400 mb-2">
+                      Milos is a skilled developer with a very professional
+                      attitude. Everything he does, he handles with same high
+                      level of commitment, and you can always count on him. He’s
+                      an expert in frontend but is not afraid to get “his hands
+                      dirty” in the backend components, build pipelines or
+                      environment configuration. One can virtually throw any
+                      task at him – he takes everything as a challenge and a
+                      great opportunity to learn even more. A true full stack
+                      developer! His enthusiasm is contagious – he’s always full
+                      ideas and new solutions. He not only completes his
+                      assignments but helps others and finds time to share his
+                      knowledge in any way possible. A fantastic team player who
+                      brings value on so many levels!
+                    </p>
+                  </div>
+                  <div className="text-xs font-aspekta font-[650] text-cdwmcp-blue">
+                    <p>- Experienced Empathetic Leader and Project Manager</p>
+                    <p>- Pawel managed Milos directly</p>
+                  </div>
+                </div>
+              </a>
+              <a
+                className="rounded-lg border border-slate-200 dark:border-slate-800 dark:bg-gradient-to-t dark:from-slate-800 dark:to-slate-800/30 odd:-rotate-1 even:rotate-1 hover:rotate-0 transition-transform duration-700 hover:duration-100 ease-in-out p-5"
+                href="#0"
+              >
+                <div className="flex flex-col h-full">
+                  <div className="grow">
+                    <Image
+                      className="rounded-full mb-2"
+                      src={AnastasijaImg}
+                      width={40}
+                      height={40}
+                      alt="Testimonial 02"
+                    />
+                    <div className="text-lg font-aspekta font-[650] mb-1">
+                      Anastasija Frolova
+                    </div>
+                    <p className="text-sm text-slate-500 dark:text-slate-400 mb-2">
+                      We have been working together with Milos in one team on a
+                      big UX project: developer (technical documentation) portal
+                      for Nexi group: https://developer.nexigroup.com/. Milos
+                      has implemented new company design system according to
+                      Atomic principles, Tailwind CSS library, as well as
+                      delivered new features such as the feedback tool, support
+                      page functionality, rendering gRPC type of APIs and many
+                      other smaller improvements and maintenance. 
+                      <br />
+                      It is a pleasure to work together with Milos as one team:
+                      exceptional collaboration, steadfast support and
+                      outstanding deliveries. We have worked out the best ways
+                      of working based on Agile/scrum principals. Milos always
+                      eagers to share the knowledge with the team and is very
+                      good in explaining technical things to the non-tech
+                      audience.
+                    </p>
+                  </div>
+                  <div className="text-xs font-aspekta font-[650] text-cdwmcp-blue">
+                    <p>- Product and Risk management in the Nordic and Baltic FinTech
+                    world.</p>
+                    <p>- Anastasija worked with Milos on the same team.</p>
+                  </div>
+                </div>
+              </a>
             </div>
           </section>
         </div>

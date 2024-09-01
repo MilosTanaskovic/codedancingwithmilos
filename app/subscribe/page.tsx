@@ -114,7 +114,7 @@ export default function Subscribe() {
                         alt="Avatar 05"
                       />
                     </div>
-                    <div className="text-sm text-slate-500 ml-3">Join 100K+ developers.</div>
+                    <div className="text-sm text-slate-500 ml-3">Join 1.5K+ developers.</div>
                   </div>
                 </div>
               </div>
