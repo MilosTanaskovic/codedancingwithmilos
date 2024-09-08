@@ -3,7 +3,8 @@ import Image from "next/image";
 import PostDate from "@/components/post-date";
 
 export default function PostItem({ ...props }) {
-  console.log(props)
+  console.log("postItem topic", props.metadata.topic)
+  console.log("postItem tags", props.metadata.tags)
   return (
     <article className="py-5 border-b border-slate-100 dark:border-slate-800">
       <div className="flex items-start">

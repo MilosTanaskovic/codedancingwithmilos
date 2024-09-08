@@ -4,6 +4,7 @@ import path from "path";
 type Metadata = {
   title: string;
   publishedAt: string;
+  topic: string;
   updatedAt?: string;
   image?: string;
   summary?: string;
