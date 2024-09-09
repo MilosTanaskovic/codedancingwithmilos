@@ -6,6 +6,7 @@ import WidgetSponsor from "@/components/widget-sponsor";
 import WidgetBook from "@/components/widget-book";
 import Posts from "@/components/posts/Posts";
 import { getBlogPosts } from "@/components/mdx/utils";
+import RightSidebar from "@/components/RightSidebar";
 
 export const metadata = {
   title: "Home - CodeDancingwithMilos",
@@ -33,13 +34,11 @@ export default async function Home() {
         </div>
 
         {/* Right sidebar */}
-        <aside className="md:w-[240px] lg:w-[300px] shrink-0">
-          <div className="space-y-6">
-            <WidgetNewsletter />
-            {/* <WidgetSponsor />
-            <WidgetBook /> */}
-          </div>
-        </aside>
+        <RightSidebar>
+          <WidgetNewsletter />
+          {/* <WidgetSponsor />
+          <WidgetBook /> */}
+        </RightSidebar>
       </div>
     </>
   );

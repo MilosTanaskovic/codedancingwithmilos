@@ -12,7 +12,7 @@ interface FilterProps {
 const Filter: React.FC<FilterProps> = ({ name, styleItem, styleLink, linkUrl, onClick }) => {
   return (
     <li 
-        className={`${styleItem} px-3 -mb-px `}
+    className={`${styleItem} px-3 -mb-px `}
         onClick={onClick}
     >
       <Link

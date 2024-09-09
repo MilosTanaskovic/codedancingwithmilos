@@ -10,10 +10,10 @@ export default async function WidgetPosts() {
       <ul className="space-y-3">
         {allBlogs.slice(0, 5).map((post, postIndex) => (
           <li key={postIndex} className="inline-flex">
-            <span className="text-sky-500 mr-2">—</span>{' '}                
+            <span className="text-cdwmcp-blue mr-2">—</span>{' '}                
             <Link
               key={postIndex}
-              className="font-aspekta font-[650] text-sm inline-flex relative hover:text-sky-500 duration-150 ease-out before:scale-x-0 before:origin-center before:absolute before:inset-0 before:bg-sky-200 dark:before:bg-sky-500 before:opacity-30 before:-z-10 before:translate-y-1/4 before:-rotate-2 hover:before:scale-100 before:duration-150 before:ease-in-out"
+              className="font-aspekta font-[650] text-sm inline-flex relative hover:text-cdwmcp-blue duration-150 ease-out before:scale-x-0 before:origin-center before:absolute before:inset-0 before:bg-sky-200 dark:before:bg-cdwmcp-blue before:opacity-30 before:-z-10 before:translate-y-1/4 before:-rotate-2 hover:before:scale-100 before:duration-150 before:ease-in-out"
               href={`/posts/${post.slug}`}
             >
               {post.metadata.title}

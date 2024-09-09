@@ -5,6 +5,7 @@ import WidgetSponsor from "@/components/widget-sponsor";
 import Experience from "@/components/experience";
 import PawelImg from "@/public/images/pawel-checkinski.jpeg";
 import AnastasijaImg from "@/public/images/avatar-03.jpeg";
+import RightSidebar from "@/components/RightSidebar";
 
 export const metadata = {
   title: "About - DevSpace",
@@ -188,7 +189,7 @@ export default function About() {
                       Atomic principles, Tailwind CSS library, as well as
                       delivered new features such as the feedback tool, support
                       page functionality, rendering gRPC type of APIs and many
-                      other smaller improvements and maintenance. 
+                      other smaller improvements and maintenance.
                       <br />
                       It is a pleasure to work together with Milos as one team:
                       exceptional collaboration, steadfast support and
@@ -200,8 +201,10 @@ export default function About() {
                     </p>
                   </div>
                   <div className="text-xs font-aspekta font-[650] text-cdwmcp-blue">
-                    <p>- Product and Risk management in the Nordic and Baltic FinTech
-                    world.</p>
+                    <p>
+                      - Product and Risk management in the Nordic and Baltic
+                      FinTech world.
+                    </p>
                     <p>- Anastasija worked with Milos on the same team.</p>
                   </div>
                 </div>
@@ -212,12 +215,10 @@ export default function About() {
       </div>
 
       {/* Right sidebar */}
-      <aside className="md:w-[240px] lg:w-[300px] shrink-0">
-        <div className="space-y-6">
-          <WidgetNewsletter />
-          {/* <WidgetSponsor /> */}
-        </div>
-      </aside>
+      <RightSidebar>
+        <WidgetNewsletter />
+        {/* <WidgetSponsor /> */}
+      </RightSidebar>
     </div>
   );
 }

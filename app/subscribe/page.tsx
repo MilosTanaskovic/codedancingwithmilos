@@ -1,19 +1,20 @@
-import Image from 'next/image'
-import WidgetSponsor from '@/components/widget-sponsor'
-import WidgetBook from '@/components/widget-book'
-import Avatar01 from '@/public/images/avatar-01.jpeg'
-import Avatar02 from '@/public/images/avatar-02.jpeg'
-import Avatar03 from '@/public/images/avatar-03.jpeg'
-import Avatar04 from '@/public/images/avatar-04.jpeg'
-import Avatar05 from '@/public/images/avatar-05.jpeg'
-import Testimonial01 from '@/public/images/testimonial-01.jpg'
-import Testimonial02 from '@/public/images/testimonial-02.jpg'
-import SubscribeForm from '@/components/subscribe-form'
+import Image from "next/image";
+import WidgetSponsor from "@/components/widget-sponsor";
+import WidgetBook from "@/components/widget-book";
+import Avatar01 from "@/public/images/avatar-01.jpeg";
+import Avatar02 from "@/public/images/avatar-02.jpeg";
+import Avatar03 from "@/public/images/avatar-03.jpeg";
+import Avatar04 from "@/public/images/avatar-04.jpeg";
+import Avatar05 from "@/public/images/avatar-05.jpeg";
+import Testimonial01 from "@/public/images/testimonial-01.jpg";
+import Testimonial02 from "@/public/images/testimonial-02.jpg";
+import SubscribeForm from "@/components/subscribe-form";
+import RightSidebar from "@/components/RightSidebar";
 
 export const metadata = {
-  title: 'Subscribe - CodeDancingwithMilos',
-  description: 'Page description',
-}
+  title: "Subscribe - CodeDancingwithMilos",
+  description: "Page description",
+};
 
 export default function Subscribe() {
   return (
@@ -28,43 +29,51 @@ export default function Subscribe() {
               {/* Page content */}
               <div className="text-slate-500 dark:text-slate-400 space-y-8">
                 <p className="text-lg">
-                  This newsletter is written by Mark Ivings, who previously worked at Google, Medium, Vimeo, and Qonto. Here is what to expect
-                  by subscribing:
+                  This newsletter is written by Mark Ivings, who previously
+                  worked at Google, Medium, Vimeo, and Qonto. Here is what to
+                  expect by subscribing:
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <svg
-                      className="w-3 h-3 fill-current text-sky-500 mr-3 mt-1.5 shrink-0"
+                      className="w-3 h-3 fill-current text-cdwmcp-blue mr-3 mt-1.5 shrink-0"
                       viewBox="0 0 12 12"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Big tech and high-growth startups, from the inside.</span>
+                    <span>
+                      Big tech and high-growth startups, from the inside.
+                    </span>
                   </li>
                   <li className="flex items-start">
                     <svg
-                      className="w-3 h-3 fill-current text-sky-500 mr-3 mt-1.5 shrink-0"
+                      className="w-3 h-3 fill-current text-cdwmcp-blue mr-3 mt-1.5 shrink-0"
                       viewBox="0 0 12 12"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Actionable advice for engineering managers, software engineers and tech workers.</span>
+                    <span>
+                      Actionable advice for engineering managers, software
+                      engineers and tech workers.
+                    </span>
                   </li>
                   <li className="flex items-start">
                     <svg
-                      className="w-3 h-3 fill-current text-sky-500 mr-3 mt-1.5 shrink-0"
+                      className="w-3 h-3 fill-current text-cdwmcp-blue mr-3 mt-1.5 shrink-0"
                       viewBox="0 0 12 12"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>A pulse on the tech market and scoop worth knowing.</span>
+                    <span>
+                      A pulse on the tech market and scoop worth knowing.
+                    </span>
                   </li>
                   <li className="flex items-start">
                     <svg
-                      className="w-3 h-3 fill-current text-sky-500 mr-3 mt-1.5 shrink-0"
+                      className="w-3 h-3 fill-current text-cdwmcp-blue mr-3 mt-1.5 shrink-0"
                       viewBox="0 0 12 12"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -114,7 +123,9 @@ export default function Subscribe() {
                         alt="Avatar 05"
                       />
                     </div>
-                    <div className="text-sm text-slate-500 ml-3">Join 1.5K+ developers.</div>
+                    <div className="text-sm text-slate-500 ml-3">
+                      Join 1.5K+ developers.
+                    </div>
                   </div>
                 </div>
               </div>
@@ -129,14 +140,25 @@ export default function Subscribe() {
                 >
                   <div className="flex flex-col h-full">
                     <div className="grow">
-                      <Image className="rounded-full mb-2" src={Testimonial01} width={40} height={40} alt="Testimonial 01" />
-                      <div className="text-lg font-aspekta font-[650] mb-1">“ Incredible Value “</div>
+                      <Image
+                        className="rounded-full mb-2"
+                        src={Testimonial01}
+                        width={40}
+                        height={40}
+                        alt="Testimonial 01"
+                      />
+                      <div className="text-lg font-aspekta font-[650] mb-1">
+                        “ Incredible Value “
+                      </div>
                       <p className="text-sm text-slate-500 dark:text-slate-400 mb-2">
-                        I was able to quickly master the skills necessary to advance my career. I'm grateful for the resources Mark provided
-                        and would recommend him to anyone.
+                        I was able to quickly master the skills necessary to
+                        advance my career. I'm grateful for the resources Mark
+                        provided and would recommend him to anyone.
                       </p>
                     </div>
-                    <div className="text-xs font-aspekta font-[650] text-sky-500">— Mary Coyle</div>
+                    <div className="text-xs font-aspekta font-[650] text-sky-500">
+                      — Mary Coyle
+                    </div>
                   </div>
                 </a>
                 <a
@@ -145,14 +167,25 @@ export default function Subscribe() {
                 >
                   <div className="flex flex-col h-full">
                     <div className="grow">
-                      <Image className="rounded-full mb-2" src={Testimonial02} width={40} height={40} alt="Testimonial 02" />
-                      <div className="text-lg font-aspekta font-[650] mb-1">“ The Best Newsletter “</div>
+                      <Image
+                        className="rounded-full mb-2"
+                        src={Testimonial02}
+                        width={40}
+                        height={40}
+                        alt="Testimonial 02"
+                      />
+                      <div className="text-lg font-aspekta font-[650] mb-1">
+                        “ The Best Newsletter “
+                      </div>
                       <p className="text-sm text-slate-500 dark:text-slate-400 mb-2">
-                        I was able to quickly master the skills necessary to advance my career. I'm grateful for the resources Mark provided
-                        and would recommend him to anyone.
+                        I was able to quickly master the skills necessary to
+                        advance my career. I'm grateful for the resources Mark
+                        provided and would recommend him to anyone.
                       </p>
                     </div>
-                    <div className="text-xs font-aspekta font-[650] text-sky-500">— Daniel Burka</div>
+                    <div className="text-xs font-aspekta font-[650] text-sky-500">
+                      — Daniel Burka
+                    </div>
                   </div>
                 </a>
               </div>
@@ -162,15 +195,10 @@ export default function Subscribe() {
       </div>
 
       {/* Right sidebar */}
-      <aside className="md:w-[240px] lg:w-[300px] shrink-0">
-        <div className="space-y-6">
-
-          <WidgetSponsor />
-          <WidgetBook />
-
-        </div>
-      </aside>
-
+      <RightSidebar>
+        <WidgetSponsor />
+        <WidgetBook />
+      </RightSidebar>
     </div>
-  )
+  );
 }
