@@ -12,6 +12,7 @@
     "@mdx-js/loader": "^3.0.1",
     "@mdx-js/react": "^3.0.1",
     "@next/mdx": "^14.2.4",
+    "@svgr/webpack": "^8.1.0",
     "@types/mdx": "^2.0.13",
     "@types/node": "^20.10.4",
     "@types/react": "^18.2.42",
@@ -27,6 +28,7 @@
     "remark-gfm": "^4.0.0",
     "resend": "^4.0.0",
     "shiki": "^1.10.1",
+    "sonner": "^1.5.0",
     "typescript": "^5.3.3"
   },
   "devDependencies": {

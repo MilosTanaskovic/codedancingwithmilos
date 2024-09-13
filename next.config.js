@@ -1,10 +1,24 @@
-const withMDX = require("@next/mdx")();
+const withMDX = require("@next/mdx")({
+  extension: /\.mdx?$/,
+});
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Configure `pageExtensions` to include MDX files
+  // Configure `pageExtensions` to include MDX and TypeScript/JavaScript files
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
-  // Optionally, add any other Next.js config below
+
+  // Add any other Next.js configuration here
+  webpack(config) {
+    // Add SVGR support to handle .svg files as React components
+    config.module.rules.push({
+      test: /\.svg$/i,
+      issuer: /\.[jt]sx?$/,
+      use: ['@svgr/webpack'],
+    });
+
+    return config;
+  },
 };
 
+// Export the Next.js config with MDX and SVGR support
 module.exports = withMDX(nextConfig);
