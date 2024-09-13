@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
-import EducationIcon01 from '@/public/images/education-icon-01.svg'
-import EducationIcon02 from '@/public/images/education-icon-02.svg'
+import EducationIcon01 from '@/assets/icons/education-icon-01.svg'
+import EducationIcon02 from '@/assets/icons/education-icon-02.svg'
 
 export default function Education() {
   return (
@@ -12,7 +12,7 @@ export default function Education() {
         <li className="relative group">
           <div className="flex items-start before:absolute before:left-0 before:h-full before:w-px before:bg-slate-200 before:dark:bg-slate-800 before:self-start before:ml-[28px] before:-translate-x-1/2 before:translate-y-8 before:group-last-of-type:hidden">
             <div className="absolute left-0 h-14 w-14 flex items-center justify-center border border-slate-200 dark:border-slate-800 dark:bg-gradient-to-t dark:from-slate-800 dark:to-slate-800/30 bg-white dark:bg-slate-900 rounded-full">
-              <Image src={EducationIcon01} width={24} height={24} alt="Purdue University" />
+              {/* <Image src={EducationIcon01} width={24} height={24} alt="Purdue University" /> */}
             </div>
             <div className="pl-20 space-y-1">
               <div className="text-xs text-slate-500 uppercase">May 2017 <span className="text-slate-400 dark:text-slate-600">·</span> Apr 2020</div>
@@ -26,7 +26,7 @@ export default function Education() {
         <li className="relative group">
           <div className="flex items-start before:absolute before:left-0 before:h-full before:w-px before:bg-slate-200 before:dark:bg-slate-800 before:self-start before:ml-[28px] before:-translate-x-1/2 before:translate-y-8 before:group-last-of-type:hidden">
             <div className="absolute left-0 h-14 w-14 flex items-center justify-center border border-slate-200 dark:border-slate-800 dark:bg-gradient-to-t dark:from-slate-800 dark:to-slate-800/30 bg-white dark:bg-slate-900 rounded-full">
-              <Image src={EducationIcon02} width={24} height={26} alt="San Jose State UniversitySan Jose State University" />
+              {/* <Image src={EducationIcon02} width={24} height={26} alt="San Jose State UniversitySan Jose State University" /> */}
             </div>
             <div className="pl-20 space-y-1">
               <div className="text-xs text-slate-500 uppercase">May 2013 <span className="text-slate-400 dark:text-slate-600">·</span> Apr 2017</div>

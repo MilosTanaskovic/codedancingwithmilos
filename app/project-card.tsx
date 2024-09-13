@@ -3,7 +3,7 @@ import Image, { StaticImageData } from 'next/image'
 
 interface Item {
   id: number
-  icon: StaticImageData
+  icon: any  //StaticImageData
   slug: string
   title: string
   excerpt: string

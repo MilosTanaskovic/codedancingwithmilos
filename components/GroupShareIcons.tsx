@@ -5,9 +5,9 @@ import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 // Import your icons as React components
-import TwitterIcon from '@/public/icons/twitter.svg';
-import FacebookIcon from '@/public/icons/facebook.svg';
-import ShareIcon from '@/public/icons/share.svg';
+import TwitterIcon from '@/assets/icons/twitter.svg';
+import FacebookIcon from '@/assets/icons/facebook.svg';
+import ShareIcon from '@/assets/icons/share.svg';
 
 interface GroupShareIconsProps {
   slug: string; // The slug of the post to be shared

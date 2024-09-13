@@ -3,14 +3,14 @@ import ProjectCard from "../project-card";
 import WidgetNewsletter from "@/components/widget-newsletter";
 import WidgetSponsor from "@/components/widget-sponsor";
 
-import Icon01 from "@/public/images/project-icon-01.svg";
-import Icon02 from "@/public/images/project-icon-02.svg";
-import Icon03 from "@/public/images/project-icon-03.svg";
-import Icon04 from "@/public/images/project-icon-04.svg";
-import Icon05 from "@/public/images/project-icon-05.svg";
-import Icon06 from "@/public/images/project-icon-06.svg";
-import Icon07 from "@/public/images/project-icon-07.svg";
-import Icon08 from "@/public/images/project-icon-08.svg";
+// import Icon01 from "@/assets/icons/project-icon-01.svg";
+// import Icon02 from "@/assets/icons/project-icon-02.svg";
+// import Icon03 from "@/assets/icons/project-icon-03.svg";
+// import Icon04 from "@/assets/icons/project-icon-04.svg";
+// import Icon05 from "@/assets/icons/project-icon-05.svg";
+// import Icon06 from "@/assets/icons/project-icon-06.svg";
+// import Icon07 from "@/assets/icons/project-icon-07.svg";
+// import Icon08 from "@/assets/icons/project-icon-08.svg";
 
 export const metadata = {
   title: "Projects - DevSpace",
@@ -21,7 +21,7 @@ export default function Projects() {
   const items01 = [
     {
       id: 0,
-      icon: Icon01,
+      icon: "implement dinamic Icons with SVG, see GroupShareIcons component",
       slug: "#0",
       title: "Container Tinkering",
       excerpt: "Solutions for running containers locally and remotely.",
@@ -29,7 +29,7 @@ export default function Projects() {
     },
     {
       id: 0,
-      icon: Icon02,
+      icon: "",
       slug: "#0",
       title: "Engine Prototypes",
       excerpt: "Solutions for running containers locally and remotely.",
@@ -40,7 +40,7 @@ export default function Projects() {
   const items02 = [
     {
       id: 0,
-      icon: Icon03,
+      icon: "",
       slug: "#0",
       title: "PixelOkay",
       excerpt: "Code assets and services for people, with people.",
@@ -48,7 +48,7 @@ export default function Projects() {
     },
     {
       id: 1,
-      icon: Icon04,
+      icon: "",
       slug: "#0",
       title: "Storybook",
       excerpt: "Storybook helps you develop, test, and document UIs.",
@@ -56,7 +56,7 @@ export default function Projects() {
     },
     {
       id: 2,
-      icon: Icon05,
+      icon: "",
       slug: "#0",
       title: "Knowledge AI",
       excerpt:
@@ -65,7 +65,7 @@ export default function Projects() {
     },
     {
       id: 3,
-      icon: Icon06,
+      icon: "",
       slug: "#0",
       title: "Security Frame",
       excerpt: "Automated security compliance for your business.",
@@ -73,7 +73,7 @@ export default function Projects() {
     },
     {
       id: 4,
-      icon: Icon07,
+      icon: "",
       slug: "#0",
       title: "KanbanOK",
       excerpt: "The most powerful kanban board ever invented.",
@@ -81,7 +81,7 @@ export default function Projects() {
     },
     {
       id: 5,
-      icon: Icon08,
+      icon: "",
       slug: "#0",
       title: "T Analytics",
       excerpt: "Make your Twitter analytics pretty and easy to share.",
