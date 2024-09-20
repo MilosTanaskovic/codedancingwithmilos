@@ -9,7 +9,7 @@ export default function PostItem({ ...props }) {
     <article className="py-5 border-b border-slate-100 dark:border-slate-800">
       <div className="flex items-start">
         <Image
-          className="rounded w-16 h-16 sm:w-[88px] sm:h-[88px] object-cover mr-6"
+          className=" hidden sm:block rounded w-16 h-16 sm:w-[88px] sm:h-[88px] object-cover mr-6"
           src={props.metadata.image}
           width={88}
           height={88}

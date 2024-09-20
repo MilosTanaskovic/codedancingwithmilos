@@ -24,7 +24,7 @@ export default function Experience() {
                 alt="EuroAccident AB Sweden"
               />
             </div>
-            <div className="pl-20 space-y-1">
+            <div className=" pl-16 sm:pl-20 space-y-1">
               <div className="text-xs text-slate-500 uppercase">
                 Aug 2024{" "}
                 <span className="text-slate-400 dark:text-slate-600">·</span>{" "}
@@ -69,7 +69,7 @@ export default function Experience() {
                 alt="Nets AB Sweden"
               />
             </div>
-            <div className="pl-20 space-y-1">
+            <div className="pl-16 sm:pl-20 space-y-1">
               <div className="text-xs text-slate-500 uppercase">
                 Feb 2023{" "}
                 <span className="text-slate-400 dark:text-slate-600">·</span>{" "}
@@ -163,7 +163,7 @@ export default function Experience() {
                 alt="Svenska Domaner AB Sweden"
               /> */}
             </div>
-            <div className="pl-20 space-y-1">
+            <div className="pl-16 sm:pl-20 space-y-1">
               <div className="text-xs text-slate-500 uppercase">
                 Jun 2021{" "}
                 <span className="text-slate-400 dark:text-slate-600">·</span>{" "}
@@ -215,7 +215,7 @@ export default function Experience() {
                         alt="Footway AB Sweden"
                       />
                     </div>
-                    <div className="pl-20 space-y-1">
+                    <div className="pl-16 sm:pl-20 space-y-1">
                       <div className="text-xs text-slate-500 uppercase">
                         May 2022{" "}
                         <span className="text-slate-400 dark:text-slate-600">
@@ -277,7 +277,7 @@ export default function Experience() {
                         alt="Footway AB Sweden"
                       />
                     </div>
-                    <div className="pl-20 space-y-1">
+                    <div className="pl-16 sm:pl-20 space-y-1">
                       <div className="text-xs text-slate-500 uppercase">
                         Dec 2021{" "}
                         <span className="text-slate-400 dark:text-slate-600">
@@ -341,7 +341,7 @@ export default function Experience() {
                 alt="Svenska Domaner AB Sweden"
               />
             </div>
-            <div className="pl-20 space-y-1">
+            <div className="pl-16 sm:pl-20 space-y-1">
               <div className="text-xs text-slate-500 uppercase">
                 Dec 2017{" "}
                 <span className="text-slate-400 dark:text-slate-600">·</span>{" "}

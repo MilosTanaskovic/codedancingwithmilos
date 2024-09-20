@@ -4,7 +4,6 @@ const withMDX = require("@next/mdx")({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  //output: 'export',
   // Configure `pageExtensions` to include MDX and TypeScript/JavaScript files
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
 
