@@ -6,8 +6,7 @@ import Theme from './theme-provider'
 import SideNavigation from '@/components/ui/side-navigation'
 
 import { Toaster } from 'sonner'
-import Header from '@/components/header/header'
-
+import Header from '@/components/header/Header'
 
 const inter = Inter({
   subsets: ['latin'],
