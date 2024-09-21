@@ -1,7 +1,5 @@
 import Image from "next/image";
 import WidgetNewsletter from "@/components/widget-newsletter";
-import WidgetSponsor from "@/components/widget-sponsor";
-//import AboutImg from '@/public/images/about.png'
 import Experience from "@/components/experience";
 import PawelImg from "@/public/images/pawel-checkinski.jpeg";
 import AnastasijaImg from "@/public/images/avatar-03.jpeg";
