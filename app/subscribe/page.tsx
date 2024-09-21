@@ -12,8 +12,9 @@ import SubscribeForm from "@/components/subscribe-form";
 import RightSidebar from "@/components/RightSidebar";
 
 export const metadata = {
-  title: "Subscribe - CodeDancingwithMilos",
-  description: "Page description",
+  title: "Subscribe - Never miss an update - CodeDancingwithMilos",
+  description:
+    "Experienced Software Engineer in the JS & .NET ecosystems, eager to solve engineering problems in both frontend and backend development. I've worked in the SaaS, E-commerce, and PayTech industries for several years and have enjoyed it immensely! I'm passionate about creating exceptional user experiences and collaborating with innovation teams.",
 };
 
 export default function Subscribe() {
@@ -29,9 +30,10 @@ export default function Subscribe() {
               {/* Page content */}
               <div className="text-slate-500 dark:text-slate-400 space-y-8">
                 <p className="text-lg">
-                  This newsletter is written by Mark Ivings, who previously
-                  worked at Google, Medium, Vimeo, and Qonto. Here is what to
-                  expect by subscribing:
+                  This newsletter is written by Milos, founder of
+                  CodeDancingwithMilos.com. He has extensive experience working
+                  in SaaS, E-commerce, PayTech, and Insurance industries. Here’s
+                  what you can expect by subscribing:
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-start">
@@ -43,7 +45,8 @@ export default function Subscribe() {
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
                     <span>
-                      Big tech and high-growth startups, from the inside.
+                      Expert insights into SaaS, E-commerce, PayTech, and
+                      Insurance industries.
                     </span>
                   </li>
                   <li className="flex items-start">
@@ -55,8 +58,9 @@ export default function Subscribe() {
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
                     <span>
-                      Actionable advice for engineering managers, software
-                      engineers and tech workers.
+                      Practical guidance on solving real-world engineering
+                      problems, both front-end and back-end in JS & .NET
+                      Ecosystem.
                     </span>
                   </li>
                   <li className="flex items-start">
@@ -68,7 +72,8 @@ export default function Subscribe() {
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
                     <span>
-                      A pulse on the tech market and scoop worth knowing.
+                      Career development tips for software engineers and tech
+                      professionals.
                     </span>
                   </li>
                   <li className="flex items-start">
@@ -79,7 +84,10 @@ export default function Subscribe() {
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>An independent viewpoint.</span>
+                    <span>
+                      In-depth strategies for building user-centric products and
+                      leading innovation teams.
+                    </span>
                   </li>
                 </ul>
                 <div>
@@ -131,8 +139,9 @@ export default function Subscribe() {
               </div>
             </section>
 
-            <section>
-              {/* Cards */}
+            {/* Cards */}
+            {/* <section>
+              
               <div className="grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-5">
                 <a
                   className="rounded-lg border border-slate-200 dark:border-slate-800 dark:bg-gradient-to-t dark:from-slate-800 dark:to-slate-800/30 odd:-rotate-1 even:rotate-1 hover:rotate-0 transition-transform duration-700 hover:duration-100 ease-in-out p-5"
@@ -189,16 +198,16 @@ export default function Subscribe() {
                   </div>
                 </a>
               </div>
-            </section>
+            </section> */}
           </div>
         </div>
       </div>
 
       {/* Right sidebar */}
-      <RightSidebar>
+      {/* <RightSidebar>
         <WidgetSponsor />
         <WidgetBook />
-      </RightSidebar>
+      </RightSidebar> */}
     </div>
   );
 }

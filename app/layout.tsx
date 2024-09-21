@@ -76,8 +76,8 @@ export const metadata = {
     description: 'CodeDancingwithMilos is a learning platform dedicated to helping developers think and work like senior software engineers by enhancing coding, leadership, and communication skills.',
     sameAs: [
       'https://www.linkedin.com/in/codedancingwithmilos/',
-      'https://www.facebook.com/codedancingwithmilos',
-      'https://x.com/CodeDancing'
+      'https://www.facebook.com/codedancingwithmilos/',
+      'https://x.com/CodeDancing/'
     ],  // Connects social profiles for added SEO benefits.
   },
 };

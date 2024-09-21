@@ -9,8 +9,8 @@ import { getBlogPosts } from "@/components/mdx/utils";
 import RightSidebar from "@/components/RightSidebar";
 
 export const metadata = {
-  title: "Home - CodeDancingwithMilos",
-  description: "CodeDancing with Milos, home page",
+  title: "CodeDancingwithMilos - Think like a Software Engineer, Become the Best on Your Team!",
+  description: "CodeDancingwithMilos is the ultimate platform to master software engineering. Learn to code like a software engineer, sharpen your leadership and communication skills, and become a top-level professional in the tech industry.",
 };
 
 export default async function Home() {

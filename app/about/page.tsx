@@ -6,8 +6,8 @@ import AnastasijaImg from "@/public/images/avatar-03.jpeg";
 import RightSidebar from "@/components/RightSidebar";
 
 export const metadata = {
-  title: "About - DevSpace",
-  description: "Page description",
+  title: "About - Experienced Software Engineer JS & .NET | SaaS, E-commerce, PayTech, Insurance Innovator - CodeDancingwithMilos",
+  description: "About - Experienced Software Engineer in the JS & .NET ecosystems, eager to solve engineering problems in both frontend and backend development. I've worked in the SaaS, E-commerce, and PayTech industries for several years and have enjoyed it immensely! I'm passionate about creating exceptional user experiences and collaborating with innovation teams.",
 };
 
 export default function About() {
