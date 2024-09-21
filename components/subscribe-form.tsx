@@ -7,17 +7,16 @@ interface SubscribeFormProps {}
 
 const SubscribeForm: React.FC<SubscribeFormProps> = ({}) => {
   const [email, setEmail] = useState<string>("");
+  const [fullName, setFullName] = useState<string>("");
   const [successMesage, setSuccessMesage] = useState<string>("");
   const [error, setError] = useState<string | null>(null);
   const [subscribed, setSubscribed] = useState<boolean>(false);
-  const emailInputRef = useRef<HTMLInputElement>(null);
+  const fullNameInputRef = useRef<HTMLInputElement>(null);
 
   // Automatically focus on the email input when the component mounts
   useEffect(() => {
-    emailInputRef.current?.focus();
+    fullNameInputRef.current?.focus();
   }, []);
-
- 
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -37,14 +36,15 @@ const SubscribeForm: React.FC<SubscribeFormProps> = ({}) => {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ email }),
+          body: JSON.stringify({ fullName, email }),
         });
 
         if (response.status === 200) {
+          setFullName("");
           setEmail("");
           setSuccessMesage("Thanks for subscribing!");
           setSubscribed(true);
-          resolve({ name: email }); // Resolve with email or any identifier
+          resolve({ name: fullName });
         } else {
           const { error } = await response.json();
           throw new Error(error);
@@ -58,7 +58,7 @@ const SubscribeForm: React.FC<SubscribeFormProps> = ({}) => {
     toast.promise(subscriptionPromise, {
       loading: "Subscribing...",
       success: (data: any) => {
-        return `${data?.name} has successfully subscribed!`; // Success message with data from the promise
+        return `${data?.name} has successfully subscribed! Thank you!`; // Success message with data from the promise
       },
       error: "Failed to subscribe. Please try again.",
     });
@@ -66,15 +66,23 @@ const SubscribeForm: React.FC<SubscribeFormProps> = ({}) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className="flex flex-col md:flex-row justify-center max-w-xs mx-auto md:max-w-md md:mx-0">
+      <div className="flex flex-col  justify-center max-w-xs mx-auto  ">
         <input
-          ref={emailInputRef}
+          ref={fullNameInputRef}
+          value={fullName}
+          onChange={(e) => setFullName(e.target.value)}
+          type="text"
+          className="form-input w-full mb-2"
+          placeholder="Your Full Name"
+          aria-label="Your Full Name"
+        />
+        <input
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="form-input w-full mb-2 md:mb-0 md:mr-2"
-          placeholder="Your email"
-          aria-label="Your email"
+          className="form-input w-full mb-2"
+          placeholder="Your Email"
+          aria-label="Your Email"
         />
         <button
           className="btn text-white bg-cdwmcp-blue hover:bg-cdwmcp-blue"

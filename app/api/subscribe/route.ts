@@ -8,12 +8,12 @@ export async function POST(request: any) {
   try {
     const body = await request.json();
     console.log("body", body);
-    const { email } = body;
+    const { fullName, email } = body;
     const { data, error } = await resend.emails.send({
       from: "CodeDancing with Milos <milos@codedancingwithmilos.com>",
       to: email,
-      subject: "Hello world",
-      react: EmailTemplate({ firstName: "John" }),
+      subject: "Welcome to CodeDancing with Milos! Let’s Elevate Your Engineering Journey 🚀",
+      react: EmailTemplate({ firstName: fullName }),
     });
 
     if (error) {
