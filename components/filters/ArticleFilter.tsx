@@ -1,45 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Filter } from "../ui";
 import { FilterItem } from "@/types/filter";
+import { filterData } from "@/data/filter";
 
 interface ArticleFilterProps {
   selectedTopic: string;
   onFilterChange: (topic: string) => void;
 }
-
-const filterData: FilterItem[] = [
-  {
-    id: 1,
-    name: "React Ecosystem",
-    topic: "react",
-    linkUrl: "",
-    styleLink: `text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300`,
-  },
-  {
-    id: 2,
-    name: "JavaScript Ecosystem",
-    topic: "javascript",
-    linkUrl: "",
-    styleLink:
-      " text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300",
-  },
-  {
-    id: 3,
-    name: "C# Ecosystem",
-    topic: "csharp",
-    linkUrl: "",
-    styleLink:
-      "text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300",
-  },
-  {
-    id: 4,
-    name: ".NET",
-    topic: "dotnet",
-    linkUrl: "",
-    styleLink:
-      "text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300",
-  },
-];
 
 const ArticleFilter: React.FC<ArticleFilterProps> = ({
   selectedTopic: propSelectedTopic,

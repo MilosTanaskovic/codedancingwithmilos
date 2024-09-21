@@ -56,7 +56,7 @@ export const metadata = {
     description: 'Take your software engineering skills to the next level. Learn to lead, code, and communicate like a senior engineer. Start your journey to becoming a top tech professional at CodeDancingwithMilos.',
     url: 'https://codedancingwithmilos.com',
     type: 'website',
-    image: 'https://codedancingwithmilos.com/images/me.jpg',
+    image: 'https://codedancingwithmilos.com/images/codedancingwithmilos.png',
     site_name: 'CodeDancingwithMilos - Become the Best Software Engineer on Your Team',  // Adds consistency by specifying the website name.
   },
   twitter: {
@@ -72,7 +72,7 @@ export const metadata = {
     '@type': 'EducationalOrganization',
     name: 'CodeDancingwithMilos - Become the Best Software Engineer on Your Team',
     url: 'https://codedancingwithmilos.com',
-    logo: 'https://codedancingwithmilos.com/images/me.jpg',  // Adds brand visibility.
+    logo: 'https://codedancingwithmilos.com/images/codedancingwithmilos.png',  // Adds brand visibility.
     description: 'CodeDancingwithMilos is a learning platform dedicated to helping developers think and work like senior software engineers by enhancing coding, leadership, and communication skills.',
     sameAs: [
       'https://www.linkedin.com/in/codedancingwithmilos/',

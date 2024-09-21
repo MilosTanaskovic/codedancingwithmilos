@@ -1,5 +1,5 @@
 import Image from "next/image";
-import HeroImage from "@/public/images/me.jpg";
+import CodeDancingwithMilos_Logo from "@/public/images/codedancingwithmilos.jpg";
 
 export default function Hero() {
   return (
@@ -8,9 +8,9 @@ export default function Hero() {
         <div className="pt-8 pb-10">
           <Image
             className="rounded-full mb-5"
-            src={HeroImage}
-            width={56}
-            height={56}
+            src={CodeDancingwithMilos_Logo}
+            width={40}
+            height={40}
             priority
             alt="Me"
           />

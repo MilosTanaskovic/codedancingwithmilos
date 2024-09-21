@@ -4,7 +4,7 @@ import ThemeToggle from "../ui/theme-toggle";
 import NavBarMobile from "./NavBarMobile";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import HeroImage from "@/public/images/me.jpg";
+import CodeDancingwithMilos_Logo from "@/public/images/codedancingwithmilos.jpg";
 
 export default function Header() {
   const pathname = usePathname();
@@ -40,7 +40,7 @@ export default function Header() {
                 <Link href="/">
                   <Image
                     className="rounded-full"
-                    src={HeroImage}
+                    src={CodeDancingwithMilos_Logo}
                     width={32}
                     height={32}
                     priority
@@ -66,7 +66,8 @@ export default function Header() {
                 className="btn-sm text-slate-100 bg-cdwmcp-blue hover:bg-cdwmcp-blue-10"
                 href="/subscribe"
               >
-                Subscribe
+                <span>Subscribe&nbsp;</span>
+                <span className=" hidden sm:block">to the Newsletter</span>
               </Link>
             </div>
           </div>
