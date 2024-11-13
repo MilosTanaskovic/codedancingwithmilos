@@ -1,12 +1,23 @@
-import Hero from "@/components/hero";
 import Talks from "@/components/talks";
 import FeaturedProjects from "@/components/featured-projects";
 import WidgetNewsletter from "@/components/widget-newsletter";
 import WidgetSponsor from "@/components/widget-sponsor";
 import WidgetBook from "@/components/widget-book";
 import Posts from "@/components/posts/Posts";
-import { getBlogPosts } from "@/components/mdx/utils";
+import { getJavaScriptEcosystemPageContent } from "@/components/mdx/utils";
 import RightSidebar from "@/components/RightSidebar";
+
+import Icon01 from '@/public/images/post-thumb-01.jpg'
+import Icon02 from '@/public/images/post-thumb-01.jpg'
+import Icon03 from '@/public/images/post-thumb-01.jpg'
+import Icon04 from '@/public/images/post-thumb-01.jpg'
+import Icon05 from '@/public/images/post-thumb-01.jpg'
+import Icon06 from '@/public/images/post-thumb-01.jpg'
+import Icon07 from '@/public/images/post-thumb-01.jpg'
+import Icon08 from '@/public/images/post-thumb-01.jpg'
+import Hero from "@/components/heros/Hero";
+import Card from "@/components/cards/Card";
+
 
 export const metadata = {
   title: "CodeDancingwithMilos - Think like a Software Engineer, Become the Best on Your Team!",
@@ -14,7 +25,8 @@ export const metadata = {
 };
 
 export default async function Home() {
-  const posts = getBlogPosts();
+  const getJavaScriptEcosystemContent = getJavaScriptEcosystemPageContent();
+
   return (
     <>
       <Hero />
@@ -23,13 +35,41 @@ export default async function Home() {
         {/* Middle area */}
         <div className="grow">
           <div className="max-w-[700px]">
+          <section>
+            {/* Page title
+            <h1 className="h1 font-aspekta mb-12">Nice stuff I've built</h1> */}
+            {/* Page content */}
             <div className="space-y-10">
-              <Posts posts={posts} />
-              {/* 
-              <Talks />
-              <FeaturedProjects /> 
-              */}
+              {/* Side Hustles cards */}
+              <section>
+                <h2 className="font-aspekta text-xl font-[650] mb-6">JavaScript Ecosystem</h2>
+                {/* Cards */}
+                <div className="grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-5">
+
+                  {getJavaScriptEcosystemContent.map(item => (
+                    <Card key={item.metadata.topic} item={item.metadata} />
+                  ))}
+
+                </div>
+              </section>
+              {/* Client Projects cards */}
+              {/* <section>
+                <h2 className="font-aspekta text-xl font-[650] mb-6">C# Ecosystem</h2>
+                
+                <div className="grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-5">
+
+                  {items02.map(item => (
+                    <ProjectCard key={item.id} item={item} />
+                  ))}
+
+                </div>
+              </section> */}
             </div>
+          </section>
+            {/* <div className="space-y-10">
+              <Posts posts={posts} />
+           
+            </div> */}
           </div>
         </div>
 

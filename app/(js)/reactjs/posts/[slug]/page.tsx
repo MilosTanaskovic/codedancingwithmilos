@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getBlogPosts } from "@/components/mdx/utils";
+import { getReactBlogPosts } from "@/components/mdx/utils";
 import { notFound } from "next/navigation";
 import { CustomMDX } from "@/components/mdx/mdx";
 import PostDate from "@/components/post-date";
@@ -10,7 +10,7 @@ import RightSidebar from "@/components/RightSidebar";
 import GroupShareIcons from "@/components/GroupShareIcons";
 
 export async function generateStaticParams() {
-  const allBlogs = getBlogPosts();
+  const allBlogs = getReactBlogPosts();
 
   return allBlogs.map((post) => ({
     slug: post.slug,
@@ -22,7 +22,7 @@ export async function generateMetadata({
 }: {
   params: { slug: string };
 }): Promise<Metadata | undefined> {
-  const post = getBlogPosts().find((post) => post.slug === params.slug);
+  const post = getReactBlogPosts().find((post) => post.slug === params.slug);
 
   if (!post) {
     return;
@@ -41,7 +41,7 @@ export default async function SinglePost({
 }: {
   params: { slug: string };
 }) {
-  const post = getBlogPosts().find((post) => post.slug === params.slug);
+  const post = getReactBlogPosts().find((post) => post.slug === params.slug);
 
   if (!post) notFound();
 
@@ -54,7 +54,7 @@ export default async function SinglePost({
           <div className="mb-3">
             <Link
               className="inline-flex text-cdwmcp-blue rounded-full border border-slate-200 dark:border-slate-800 dark:bg-gradient-to-t dark:from-slate-800 dark:to-slate-800/30"
-              href="/"
+              href={`${post.metadata.mainUrl}`}
             >
               <span className="sr-only">Back</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34">
@@ -78,7 +78,11 @@ export default async function SinglePost({
                   4 Min read
                 </div>
                 {/* Share buttons */}
-               <GroupShareIcons slug={post.slug} />
+                <GroupShareIcons
+                  page={""}
+                  mainUrl={post.metadata.mainUrl || ""}
+                  slug={post.slug}
+                />
               </div>
               <h1 className="h1 font-aspekta mb-4">{post.metadata.title}</h1>
             </header>
@@ -93,7 +97,15 @@ export default async function SinglePost({
       <RightSidebar>
         <WidgetNewsletter />
         {/* <WidgetSponsor /> */}
-        <WidgetPosts />
+        <WidgetPosts
+          allBlogs={getReactBlogPosts().map((post) => ({
+            ...post,
+            metadata: {
+              ...post.metadata,
+              mainUrl: post.metadata.mainUrl || "",
+            },
+          }))}
+        />
       </RightSidebar>
     </div>
   );

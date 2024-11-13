@@ -1,7 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import { ArticleFilter } from "../filters";
-import PostItem from "@/app/post-item";
+import PostItem from "./PostItem";
+
+
 
 interface PostsProps {
   posts: any;
@@ -25,10 +27,10 @@ const Posts: React.FC<PostsProps> = ({ posts }) => {
       <h2 className="font-aspekta text-xl font-[650] mb-3">Latest Articles</h2>
 
       {/* Filters */}
-      <ArticleFilter
+      {/* <ArticleFilter
         selectedTopic={selectedTopic}
         onFilterChange={setSelectedTopic}
-      />
+      /> */}
       {/* Articles list */}
       <div>
         {filteredBlogs.length !== 0 ? (

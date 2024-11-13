@@ -8,6 +8,7 @@ import SideNavigation from '@/components/ui/side-navigation'
 import { Toaster } from 'sonner'
 import Header from '@/components/header/Header'
 import { Viewport } from 'next'
+import Footer from '@/components/ui/footer'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -99,14 +100,11 @@ export default function RootLayout({
               { /* Main content */}
               <main className="grow overflow-hidden px-6">
                 <div className="w-full h-full max-w-[1072px] mx-auto flex flex-col">
-
                   <Header />
-
                   {children}
-
+                  {/* <Footer /> */}
                 </div>
               </main>
-
             </div>
           </div>
           <Toaster richColors />

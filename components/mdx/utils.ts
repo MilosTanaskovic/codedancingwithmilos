@@ -1,16 +1,6 @@
+import { Metadata } from "@/types/mdx";
 import fs from "fs";
 import path from "path";
-
-type Metadata = {
-  title: string;
-  publishedAt: string;
-  topic: string;
-  updatedAt?: string;
-  image?: string;
-  summary?: string;
-  author?: string;
-  authorImg?: string;
-};
 
 function parseFrontmatter(fileContent: string) {
   const frontmatterRegex = /---\s*([\s\S]*?)\s*---/;
@@ -52,6 +42,29 @@ function getMDXData(dir: string) {
   });
 }
 
-export function getBlogPosts() {
-  return getMDXData(path.join(process.cwd(), "content/blog"));
+/**
+ * Content for the Blog Posts
+ */
+
+export function getJavaScriptBlogPosts() {
+  return getMDXData(path.join(process.cwd(), "content/blog/javascript"));
+}
+
+export function getReactBlogPosts() {
+  return getMDXData(path.join(process.cwd(), "content/blog/react"));
+}
+
+/**
+ * Content for the Website Pages
+ */
+export function getHomePageContent() {
+  return getMDXData(path.join(process.cwd(), "content/pages/home"));
+}
+
+export function getJavaScriptEcosystemPageContent() {
+  return getMDXData(path.join(process.cwd(), "content/pages/home/javascript-ecosystem"));
+}
+
+export function getAboutPageContent() {
+  return getMDXData(path.join(process.cwd(), "content/pages/about"));
 }

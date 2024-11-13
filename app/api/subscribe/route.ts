@@ -7,7 +7,6 @@ const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
 export async function POST(request: any) {
   try {
     const body = await request.json();
-    console.log("body", body);
     const { fullName, email } = body;
     const { data, error } = await resend.emails.send({
       from: "CodeDancing with Milos <milos@codedancingwithmilos.com>",
