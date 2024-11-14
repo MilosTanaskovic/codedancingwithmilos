@@ -11,9 +11,9 @@ import { useRouter } from "next/router";
 
 export const metadata = {
   title:
-    "CodeDancingwithMilos - Think like a Software Engineer, Become the Best on Your Team!",
+    "ReactJS Ecosystem - All about ReactJS Ecosystem. News, tutorials, articles, projects, and more.",
   description:
-    "CodeDancingwithMilos is the ultimate platform to master software engineering. Learn to code like a software engineer, sharpen your leadership and communication skills, and become a top-level professional in the tech industry.",
+    "Unpack the power of React! Discover guides, best practices, and advanced techniques to build dynamic, responsive, and scalable user interfaces with React and its ecosystem.",
 };
 
 export default async function ReactJS() {
