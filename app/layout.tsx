@@ -102,7 +102,7 @@ export default function RootLayout({
                 <div className="w-full h-full max-w-[1072px] mx-auto flex flex-col">
                   <Header />
                   {children}
-                  {/* <Footer /> */}
+                  <Footer />
                 </div>
               </main>
             </div>

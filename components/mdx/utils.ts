@@ -65,6 +65,10 @@ export function getJavaScriptEcosystemPageContent() {
   return getMDXData(path.join(process.cwd(), "content/pages/home/javascript-ecosystem"));
 }
 
+export function getDotnetEcosystemPageContent() {
+  return getMDXData(path.join(process.cwd(), "content/pages/home/dotnet-ecosystem"));
+}
+
 export function getAboutPageContent() {
   return getMDXData(path.join(process.cwd(), "content/pages/about"));
 }
