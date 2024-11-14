@@ -13,9 +13,9 @@ import HeroLng from "@/components/heros/HeroLng";
 
 export const metadata = {
   title:
-    "CodeDancingwithMilos - Think like a Software Engineer, Become the Best on Your Team!",
+    "JavaScript Ecosystem - All about JS Ecosystem. News, tutorials, articles, projects, and more.",
   description:
-    "CodeDancingwithMilos is the ultimate platform to master software engineering. Learn to code like a software engineer, sharpen your leadership and communication skills, and become a top-level professional in the tech industry.",
+    "Dive into the world of vanilla JavaScript! Explore tutorials, insights, and tips on mastering the core concepts, tools, and techniques that make JavaScript essential for web development.",
 };
 
 export default async function JavaScript() {
