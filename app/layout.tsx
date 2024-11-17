@@ -3,12 +3,12 @@ import './css/style.css'
 import { Inter } from 'next/font/google'
 import localFont from 'next/font/local'
 import Theme from './theme-provider'
-import SideNavigation from '@/components/ui/side-navigation'
+import SideNavigation from '@/components/side-navigation'
 
 import { Toaster } from 'sonner'
 import Header from '@/components/header/Header'
 import { Viewport } from 'next'
-import Footer from '@/components/ui/footer'
+import Footer from '@/components/footer'
 
 const inter = Inter({
   subsets: ['latin'],

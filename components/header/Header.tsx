@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import ThemeToggle from "../ui/theme-toggle";
+import ThemeToggle from "../theme-toggle";
 import NavBarMobile from "./NavBarMobile";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
@@ -61,15 +61,27 @@ export default function Header() {
             <ThemeToggle />
 
             {/* Button */}
-            <div>
-              <Link
-                className="btn-sm text-slate-100 bg-cdwmcp-blue hover:bg-cdwmcp-blue-10"
-                href="/subscribe"
-              >
-                <span>Subscribe&nbsp;</span>
-                <span className=" hidden sm:block">to the Newsletter</span>
-              </Link>
-            </div>
+            {pathname === "/resume" ? (
+              <div className="flex justify-start">
+                <a
+                  href="/resume.pdf"
+                  className="btn-sm  text-slate-100 bg-cdwmcp-blue hover:bg-cdwmcp-blue-10"
+                  download="resume.pdf"
+                >
+                  Download resume
+                </a>
+              </div>
+            ) : (
+              <div>
+                <Link
+                  className="btn-sm text-slate-100 bg-cdwmcp-blue hover:bg-cdwmcp-blue-10"
+                  href="/subscribe"
+                >
+                  <span>Subscribe&nbsp;</span>
+                  <span className=" hidden sm:block">to the Newsletter</span>
+                </Link>
+              </div>
+            )}
           </div>
         </div>
       </div>
