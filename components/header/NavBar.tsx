@@ -14,10 +14,10 @@ const NavBar: React.FC<NavBarProps> = ({}) => {
           <Link
             href="/"
             className={`w-full h-6 flex items-center justify-center relative after:absolute after:w-0.5 after:right-0 after:top-0 after:bottom-0 ${
+               // pathname !== "/projects" &&
+              // pathname !== "/resume"
               pathname !== "/about" &&
-              pathname !== "/subscribe" &&
-              // pathname !== "/projects" &&
-              pathname !== "/resume"
+              pathname !== "/subscribe"
                 ? "text-cdwmcp-blue after:bg-cdwmcp-blue"
                 : "text-slate-400 hover:text-slate-500 dark:text-slate-500 dark:hover:text-slate-400"
             }`}
@@ -74,7 +74,7 @@ const NavBar: React.FC<NavBarProps> = ({}) => {
         </svg>
       </Link>
     </li> */}
-    <li className="py-2">
+    {/* <li className="py-2">
       <Link
         href="/resume"
         className={`w-full h-6 flex items-center justify-center relative after:absolute after:w-0.5 after:right-0 after:top-0 after:bottom-0 ${pathname === '/resume'
@@ -88,7 +88,7 @@ const NavBar: React.FC<NavBarProps> = ({}) => {
           <path fillRule="nonzero" d="M2 6v12h14V6H2Zm16-2v16H0V4h18ZM2 2V0h14v2H2Z" />
         </svg>
       </Link>
-    </li>  
+    </li>   */}
      {/*                           
     <li className="py-2">
       <Link
