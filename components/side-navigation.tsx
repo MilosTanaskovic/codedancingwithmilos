@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import CodeDancingwithMilos_Logo from "@/public/images/codedancingwithmilos.jpg";
-import NavBar from "../header/NavBar";
+import NavBar from "./header/NavBar";
 
 export default function SideNavigation() {
   const pathname = usePathname();
