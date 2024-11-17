@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FilterItem } from "@/types/filter";
 import { filterData } from "@/data/filter";
+import Filter from "./Filter";
 
 interface ArticleFilterProps {
   selectedTopic: string;
