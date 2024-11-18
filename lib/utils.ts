@@ -1,3 +1,10 @@
+
+import { type ClassValue, clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
 // Local Part ([a-zA-Z0-9.!#$%&'*+/=?^_{|}~-]+`):
 // 	•	Allows alphanumeric characters and special characters that are valid in email addresses (e.g., !#$%&'*+/=?^_{|}~-`).
 // 	•	@ Symbol (@):
@@ -13,7 +20,7 @@
 // This regex is robust, handling most real-world email address formats. You can further refine it if needed, depending on specific business or domain requirements.
 
 export const validateEmail = (email: string) => {
-  const emailRegex =
-    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2,})?$/;
-  return emailRegex.test(email);
-};
+    const emailRegex =
+      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2,})?$/;
+    return emailRegex.test(email);
+  };

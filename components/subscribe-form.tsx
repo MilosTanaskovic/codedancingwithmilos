@@ -1,5 +1,5 @@
 "use client";
-import { validateEmail } from "@/utils";
+import { validateEmail } from "@/lib/utils";
 import React, { useState, useRef, useEffect } from "react";
 import { toast } from "sonner";
 

@@ -5,10 +5,14 @@ import Recommendations from "@/components/recommendations";
 import WidgetSkills from "@/components/widgets/WidgetSkills";
 import WidgetLanguages from "@/components/widgets/WidgetLanguages";
 import WidgetReferences from "@/components/widget-references";
+import { Download } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export const metadata = {
   title: "CodeDancingwithMilos - My Resume",
-  description: "CodeDancingwithMilos - Discover my resume, education, experience, awards, and recommendations.",
+  description:
+    "CodeDancingwithMilos - Discover my resume, education, experience, awards, and recommendations.",
 };
 
 export default function Resume() {
@@ -29,13 +33,14 @@ export default function Resume() {
 
               {/* Download button */}
               <div className="flex justify-center">
-                <a
-                  href="/resume.pdf"
-                  className="btn-sm  text-slate-100 bg-cdwmcp-blue hover:bg-cdwmcp-blue-10"
-                  download="resume.pdf"
+                <Button
+                  asChild
+                  className="btn-sm text-slate-100 bg-cdwmcp-blue hover:bg-cdwmcp-blue-10"
                 >
-                  Download resume
-                </a>
+                  <Link href="/resume.pdf" download="resume.pdf">
+                    <Download /> Download Resume
+                  </Link>
+                </Button>
               </div>
             </div>
           </section>
