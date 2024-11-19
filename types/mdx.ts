@@ -13,6 +13,20 @@ export type Metadata = {
   authorImg?: string;
   mainUrl?: string;
   page?: string;
+  sort?: string;
+  // for experience
+  employmentType?: string;
+  companyName?: string;
+  location?: string;
+  locationType?: string;
+  startDate?: string;
+  endDate?: string;
+  // for education
+  schoolName?: string;
+  degree?: string;
+  fieldOfStudy?: string;
+  grade?: string;
+  activities?: string;
 };
 
 // for posts & pages

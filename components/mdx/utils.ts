@@ -72,3 +72,28 @@ export function getDotnetEcosystemPageContent() {
 export function getAboutPageContent() {
   return getMDXData(path.join(process.cwd(), "content/pages/about"));
 }
+
+// Resume, About, Projects
+export function getEducationContent() {
+  return getMDXData(path.join(process.cwd(), "content/pages/resume/education"));
+}
+
+export function getExperienceContent() {
+  return getMDXData(path.join(process.cwd(), "content/pages/resume/experience"));
+}
+
+export function getAwardsContent() {
+  return getMDXData(path.join(process.cwd(), "content/pages/resume/awards"));
+}
+
+export function getRecommendationsContent() {
+  return getMDXData(path.join(process.cwd(), "content/pages/resume/recommendations"));
+}
+
+export function getSkillsContent() {
+  return getMDXData(path.join(process.cwd(), "content/pages/resume/skills"));
+}
+
+export function getProjectsContent() {
+  return getMDXData(path.join(process.cwd(), "content/pages/projects"));
+}

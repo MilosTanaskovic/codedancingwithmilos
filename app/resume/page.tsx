@@ -1,4 +1,3 @@
-import Education from "@/components/education";
 import Experience from "@/components/experience";
 import Awards from "@/components/awards";
 import Recommendations from "@/components/recommendations";
@@ -8,6 +7,7 @@ import WidgetReferences from "@/components/widget-references";
 import { Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Educations from "@/components/educations";
 
 export const metadata = {
   title: "CodeDancingwithMilos - My Resume",
@@ -26,7 +26,7 @@ export default function Resume() {
             <h1 className="h1 font-aspekta mb-12">My resume</h1>
             {/* Page content */}
             <div className="text-slate-500 dark:text-slate-400 space-y-12">
-              <Education />
+              <Educations />
               <Experience />
               <Awards />
               <Recommendations />
