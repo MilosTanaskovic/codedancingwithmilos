@@ -19,7 +19,7 @@ const Education: React.FC<EducationProps> = ({ data }) => {
             src={metadata.logo || "/default-logo.png"}
             width={34}
             height={34}
-            alt={metadata?.schoolName || "School logo"}
+            alt={metadata?.name || "School logo"}
           />
         </div>
         <div className="pl-20 space-y-1">
@@ -33,7 +33,7 @@ const Education: React.FC<EducationProps> = ({ data }) => {
             )}
           </div>
           <div className="font-aspekta font-[650] text-slate-800 dark:text-slate-100">
-            {metadata.schoolName}
+            {metadata.name}
           </div>
           <div className="text-sm font-medium text-slate-800 dark:text-slate-100">
             {metadata.fieldOfStudy}

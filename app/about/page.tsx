@@ -1,8 +1,8 @@
 import Image from "next/image";
 import WidgetNewsletter from "@/components/widget-newsletter";
 import Experience from "@/components/experience";
-import PawelImg from "@/public/images/pawel-checkinski.jpeg";
-import AnastasijaImg from "@/public/images/avatar-03.jpeg";
+import PawelImg from "@/public/images/people/pawelchecinski.jpeg";
+import AnastasijaImg from "@/public/images/people/anastasijafrolova.jpeg";
 import RightSidebar from "@/components/RightSidebar";
 
 export const metadata = {

@@ -5,11 +5,10 @@ import EducationIcon02 from "@/assets/icons/education-icon-02.svg";
 import { getEducationContent } from "./mdx/utils";
 import Education from "./blocks/Education";
 
-
 export default function Educations() {
   // get education data
   const getEducationData = getEducationContent();
-  
+
   // Sort education data by `metadata.sort` in ascending order
   getEducationData.sort((a, b) => {
     if (a.metadata.sort && b.metadata.sort) {
@@ -25,10 +24,7 @@ export default function Educations() {
       </h2>
       <ul className="space-y-8">
         {getEducationData.map((education) => (
-          <Education
-            key={education.slug}
-            data={education}
-          />
+          <Education key={education.slug} data={education} />
         ))}
       </ul>
     </div>
