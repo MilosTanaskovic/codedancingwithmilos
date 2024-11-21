@@ -22,11 +22,16 @@ export type Metadata = {
   startDate?: string;
   endDate?: string;
   // for education
-  schoolName?: string;
+  name?: string;
   degree?: string;
   fieldOfStudy?: string;
   grade?: string;
   activities?: string;
+  // for recommendations
+  relationship?: string;
+  position?: string;
+  connection?: string;
+  reference?: string;
 };
 
 // for posts & pages

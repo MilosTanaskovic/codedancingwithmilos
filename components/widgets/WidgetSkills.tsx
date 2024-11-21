@@ -1,5 +1,6 @@
 import { FaReact, FaLaravel } from "react-icons/fa";
-import { SiTypescript, SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import { SiTypescript, SiNextdotjs, SiTailwindcss, SiCsharp, SiDotnet } from "react-icons/si";
+
 
 export default function WidgetSkills() {
   return (
@@ -13,8 +14,8 @@ export default function WidgetSkills() {
             <a className="font-aspekta font-[650] text-sm truncate">React</a>
           </div>
           <div className="grow inline-flex mr-1 truncate">
-            <span className="text-cdwmcp-blue mr-2">—</span>{" "}
-            <a className="font-aspekta font-[650] text-sm truncate">React</a>
+            <SiCsharp className="text-purple-500 mr-2" size={20} />
+            <a className="font-aspekta font-[650] text-sm truncate">C#</a>
           </div>
         </li>
         <li className="flex justify-between items-center">
@@ -23,6 +24,10 @@ export default function WidgetSkills() {
             <a className="font-aspekta font-[650] text-sm truncate">
               TypeScript
             </a>
+          </div>
+          <div className="grow inline-flex mr-1 truncate">
+            <SiDotnet className="text-purple-500 mr-2" size={20} />
+            <a className="font-aspekta font-[650] text-sm truncate">.NET</a>
           </div>
         </li>
         <li className="flex justify-between items-center">

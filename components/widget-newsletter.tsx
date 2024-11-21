@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Avatar01 from "@/public/images/avatar-01.jpeg";
-import Avatar02 from "@/public/images/avatar-02.jpeg";
-import Avatar03 from "@/public/images/avatar-03.jpeg";
-import Avatar04 from "@/public/images/avatar-04.jpeg";
-import Avatar05 from "@/public/images/avatar-05.jpeg";
+import Avatar01 from "@/public/images/people/avatar-01.jpeg";
+import Avatar02 from "@/public/images/people/avatar-02.jpeg";
+import Avatar03 from "@/public/images/people/anastasijafrolova.jpeg";
+import Avatar04 from "@/public/images/people/avatar-04.jpeg";
+import Avatar05 from "@/public/images/people/avatar-05.jpeg";
 
 export default function WidgetNewsletter() {
   return (

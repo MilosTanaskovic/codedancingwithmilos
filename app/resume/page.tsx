@@ -3,7 +3,7 @@ import Awards from "@/components/awards";
 import Recommendations from "@/components/recommendations";
 import WidgetSkills from "@/components/widgets/WidgetSkills";
 import WidgetLanguages from "@/components/widgets/WidgetLanguages";
-import WidgetReferences from "@/components/widget-references";
+import WidgetReferences from "@/components/widge-references";
 import { Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -27,8 +27,8 @@ export default function Resume() {
             {/* Page content */}
             <div className="text-slate-500 dark:text-slate-400 space-y-12">
               <Educations />
-              <Experience />
-              <Awards />
+              <Experience/>
+              {/* <Awards /> */}
               <Recommendations />
 
               {/* Download button */}
