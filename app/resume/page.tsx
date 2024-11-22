@@ -1,6 +1,6 @@
 import Experience from "@/components/experience";
 import Awards from "@/components/awards";
-import Recommendations from "@/components/recommendations";
+
 import WidgetSkills from "@/components/widgets/WidgetSkills";
 import WidgetLanguages from "@/components/widgets/WidgetLanguages";
 import WidgetReferences from "@/components/widge-references";
@@ -8,6 +8,12 @@ import { Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Educations from "@/components/educations";
+import dynamic from "next/dynamic";
+
+const Recommendations = dynamic(() => import("@/components/recommendations"), {
+  ssr: false,
+});
+//import Recommendations from "@/components/recommendations";
 
 export const metadata = {
   title: "CodeDancingwithMilos - My Resume",
@@ -15,7 +21,7 @@ export const metadata = {
     "CodeDancingwithMilos - Discover my resume, education, experience, awards, and recommendations.",
 };
 
-export default function Resume() {
+export default async function Resume() {
   return (
     <div className="grow md:flex space-y-8 md:space-y-0 md:space-x-8 pt-12 md:pt-16 pb-16 md:pb-20">
       {/* Middle area */}

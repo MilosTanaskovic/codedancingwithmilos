@@ -1,6 +1,12 @@
+import dynamic from "next/dynamic";
 import { getRecommendationsContent } from "./mdx/utils";
+import { Suspense } from "react";
 
+// const RecommendationTabs = dynamic(() => import("./RecommendationTabs"), {
+//   ssr: true,
+// });
 import RecommendationTabs from "./RecommendationTabs";
+import SkeletonCard from "./cards/SkeletonCard";
 
 export default function Recommendations() {
   // get recommendations data
@@ -19,8 +25,9 @@ export default function Recommendations() {
       <h2 className="h3 font-aspekta text-slate-800 dark:text-slate-100">
         {sortedRecommendations[0].metadata.title}
       </h2>
-
-      <RecommendationTabs data={sortedRecommendations} />
+      <Suspense fallback={<SkeletonCard />}>
+        <RecommendationTabs data={sortedRecommendations} />
+      </Suspense>
     </div>
   );
 }
