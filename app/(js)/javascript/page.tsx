@@ -19,10 +19,11 @@ export const metadata = {
 };
 
 export default async function JavaScript() {
-  const posts = getJavaScriptBlogPosts();
+  const posts =  getJavaScriptBlogPosts();
   const getJavaScriptPageContent = getJavaScriptEcosystemPageContent().filter(
     (item) => item.metadata.page?.toLowerCase() === "javascript"
   );
+
   return (
     <>
       {/* use this one if you want full with of page 
