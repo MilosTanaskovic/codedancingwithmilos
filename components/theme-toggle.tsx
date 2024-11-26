@@ -4,7 +4,7 @@ import { useTheme } from 'next-themes'
 
 export default function ThemeToggle() {
 
-  const { theme, setTheme } = useTheme()
+  const { theme, setTheme } = useTheme();
 
   return (
     <div className="flex flex-col justify-center ml-3">

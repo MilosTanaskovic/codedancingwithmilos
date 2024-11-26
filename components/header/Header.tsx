@@ -1,10 +1,10 @@
 "use client";
 import Link from "next/link";
 import ThemeToggle from "../theme-toggle";
-import NavBarMobile from "./NavBarMobile";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import CodeDancingwithMilos_Logo from "@/public/images/codedancingwithmilos.jpg";
+import { SidebarTrigger } from "../ui/sidebar";
 
 export default function Header() {
   const pathname = usePathname();
@@ -51,11 +51,6 @@ export default function Header() {
             )}
           </div>
 
-          {/* Mobile Nav Menu */}
-          <div className=" sm:hidden">
-            <NavBarMobile />
-          </div>
-
           <div className=" flex items-center gap-4">
             {/* Light switch */}
             <ThemeToggle />
@@ -82,6 +77,9 @@ export default function Header() {
                 </Link>
               </div>
             )}
+
+            {/* Hamburger Menu For Mobile */}
+            <SidebarTrigger className=" sm:hidden" />
           </div>
         </div>
       </div>

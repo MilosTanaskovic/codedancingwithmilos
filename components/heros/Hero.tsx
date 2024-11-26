@@ -7,12 +7,12 @@ export default function Hero() {
       <div className="max-w-[700px]">
         <div className="pt-8 pb-10">
           <Image
-            className="rounded-full mb-5"
+            className="rounded-full mb-5 sm:hidden"
             src={CodeDancingwithMilos_Logo}
             width={40}
             height={40}
             priority
-            alt="Me"
+            alt="CodeDancing with Milos"
           />
           <h1 className="h1 font-aspekta mb-5">
             I write about coding and being a{" "}
