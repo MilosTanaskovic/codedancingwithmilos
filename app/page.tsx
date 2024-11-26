@@ -37,10 +37,21 @@ export default async function Home() {
             <h1 className="h1 font-aspekta mb-12">Nice stuff I've built</h1> */}
               {/* Page content */}
               <div className="space-y-10">
+                {/* <section>
+                  <h2 className="font-aspekta text-xl font-[650] mb-6">
+                    UI For Developers
+                  </h2>
+                  
+                  <div className="grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-5">
+                    {getJavaScriptEcosystemContent?.map((item) => (
+                      <Card key={item.metadata.topic} item={item.metadata} />
+                    ))}
+                  </div>
+                </section> */}
                 {/* JavaScript Ecosystem Cards */}
                 <section>
                   <h2 className="font-aspekta text-xl font-[650] mb-6">
-                    .JS Ecosystem
+                    JS|TS Ecosystem
                   </h2>
                   {/* Cards */}
                   <div className="grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-5">
