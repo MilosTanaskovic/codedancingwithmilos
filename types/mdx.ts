@@ -3,6 +3,7 @@ export type Metadata = {
   publishedAt: string;
   status?: string;
   excerpt?: string;
+  readingTime?: string;
   topic: string;
   updatedAt?: string;
   image?: string;

@@ -28,6 +28,7 @@ const config: Config = {
   			'7xl': ["4.5rem", { lineHeight: "1", letterSpacing: "-0.01em" }]
   		},
   		colors: {
+			'cdwmcp-dark': '#10172A',
   			'cdwmcp-darkblue': '#001C46',
   			'cdwmcp-gray': '#F2F5FA',
   			'cdwmcp-white': '#FFFFFF',
