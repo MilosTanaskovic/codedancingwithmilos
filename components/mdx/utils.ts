@@ -97,3 +97,13 @@ export function getSkillsContent() {
 export function getProjectsContent() {
   return getMDXData(path.join(process.cwd(), "content/pages/projects"));
 }
+
+/**
+ * Startup stores
+ */
+
+export function getStartupStores() {
+  return getMDXData(path.join(process.cwd(), "content/blog/startups"));
+}
+
+

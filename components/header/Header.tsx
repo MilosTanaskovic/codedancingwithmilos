@@ -5,13 +5,35 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import CodeDancingwithMilos_Logo from "@/public/images/codedancingwithmilos.jpg";
 import { SidebarTrigger } from "../ui/sidebar";
+import NavMenuBox from "./NavMenuBox";
 
 export default function Header() {
   const pathname = usePathname();
   return (
     <header>
       <div className="flex items-center justify-between h-16 before:block">
-        <div className="grow flex justify-between sm:justify-end space-x-4">
+        <div className="grow flex justify-between space-x-4">
+          {/* Mobile Logo Img */}
+          <div className="sm:hidden mt-auto mr-4">
+            {pathname !== "/" && (
+              <div className="">
+                <Link href="/">
+                  <Image
+                    className="rounded-full"
+                    src={CodeDancingwithMilos_Logo}
+                    width={32}
+                    height={32}
+                    priority
+                    alt="CodeDancing with Milos"
+                  />
+                </Link>
+              </div>
+            )}
+          </div>
+          <div className="hidden sm:block"></div>
+          {/* NavigationMenu */}
+          <NavMenuBox />
+
           {/* Search form */}
           {/* <form className="w-full max-w-[276px]">
             <div className="flex flex-wrap">
@@ -33,23 +55,6 @@ export default function Header() {
               </div>
             </div>
           </form> */}
-          {/* Mobile Logo Img */}
-          <div className="sm:hidden mt-auto mr-4">
-            {pathname !== "/" && (
-              <div className="">
-                <Link href="/">
-                  <Image
-                    className="rounded-full"
-                    src={CodeDancingwithMilos_Logo}
-                    width={32}
-                    height={32}
-                    priority
-                    alt="CodeDancing with Milos"
-                  />
-                </Link>
-              </div>
-            )}
-          </div>
 
           <div className=" flex items-center gap-4">
             {/* Light switch */}
