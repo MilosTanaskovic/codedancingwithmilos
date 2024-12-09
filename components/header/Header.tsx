@@ -11,10 +11,9 @@ export default function Header() {
   const pathname = usePathname();
   return (
     <header>
-      <div className="flex items-center justify-between h-16 before:block">
-        <div className="grow flex justify-between space-x-4">
+      <div className="flex items-center justify-between h-16">
           {/* Mobile Logo Img */}
-          <div className="sm:hidden mt-auto mr-4">
+          <div className="sm:hidden mr-4">
             {pathname !== "/" && (
               <div className="">
                 <Link href="/">
@@ -32,7 +31,7 @@ export default function Header() {
           </div>
           <div className="hidden sm:block"></div>
           {/* NavigationMenu */}
-          <NavMenuBox />
+          <NavMenuBox className="hidden sm:block" />
 
           {/* Search form */}
           {/* <form className="w-full max-w-[276px]">
@@ -87,7 +86,6 @@ export default function Header() {
             <SidebarTrigger className=" sm:hidden" />
           </div>
         </div>
-      </div>
     </header>
   );
 }

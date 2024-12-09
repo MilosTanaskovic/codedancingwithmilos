@@ -43,11 +43,11 @@ const aspekta = localFont({
 export const viewport: Viewport = {
   themeColor: "#2762F8", // Represents brand color, improving consistency across browsers.
   width: "device-width",
-  initialScale: 1,
+  initialScale: 1.0,
   maximumScale: 1,
   userScalable: false,
   // Also supported by less commonly used
-  // interactiveWidget: 'resizes-visual',
+  interactiveWidget: 'resizes-visual',
 };
 
 export const metadata = {
@@ -108,7 +108,7 @@ export default function RootLayout({
       >
         <Theme>
           <Sidebar>
-            <div className="mx-auto">
+            <div className="mx-auto !max-w-[-webkit-fill-available]">
               <div className="min-h-screen flex">
                 {/* <SideNavigation /> */}
                 <AppSidebar />

@@ -27,7 +27,7 @@ export default function Projects() {
     <div className="grow md:flex space-y-8 md:space-y-0 md:space-x-8 pt-12 md:pt-16 pb-16 md:pb-20">
       {/* Middle area */}
       <div className="grow">
-        <div className="max-w-[700px]">
+        <div className="max-w-screen-2xl">
           <section>
             {/* Page title */}
             <h1 className="h1 font-aspekta mb-12">Early Startup Days</h1>
@@ -39,7 +39,7 @@ export default function Projects() {
                 This Month Startup Stories
                 </h2>
                 {/* Cards */}
-                <div className="grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-5">
+                <div className="grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5">
                   {starups?.map((starup) => (
                     <StarupCard key={starup.slug} item={starup} />
                   ))}

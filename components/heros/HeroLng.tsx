@@ -12,7 +12,7 @@ interface HeroLngProps {
 const HeroLng: React.FC<HeroLngProps> = ({ pageContent }) => {
   console.log("content", pageContent);
   return (
-    <div className="mb-8">
+    <div className="max-w-screen-md 2xl:max-w-screen-lg mb-8">
       {/* <div className="grow">
        <div className="max-w-[700px]"> */}
       {/* Back */}

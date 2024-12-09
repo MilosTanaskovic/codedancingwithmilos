@@ -9,8 +9,10 @@ import {
   getJavaScriptEcosystemPageContent,
 } from "@/components/mdx/utils";
 import RightSidebar from "@/components/RightSidebar";
-import Hero from "@/components/heros/Hero";
+import HeroBox from "@/components/heros/HeroBox";
 import Card from "@/components/cards/Card";
+import Image from "next/image";
+import CodeDancingwithMilos_Logo from "@/public/images/codedancingwithmilos.jpg";
 
 export const metadata = {
   title:
@@ -26,12 +28,37 @@ export default async function Home() {
 
   return (
     <>
-      <Hero />
+      <HeroBox>
+        <Image
+          className="rounded-full mb-5 sm:hidden"
+          src={CodeDancingwithMilos_Logo}
+          width={40}
+          height={40}
+          priority
+          alt="CodeDancing with Milos"
+        />
+        <h1 className="h1 font-aspekta mb-5">
+          I write about coding and being a{" "}
+          <span className="inline-flex relative text-cdwmcp-blue before:absolute before:inset-0 before:bg-sky-200 dark:before:bg-cdwmcp-blue before:opacity-30 before:-z-10 before:-rotate-2 before:translate-y-1/4">
+            full-time
+          </span>{" "}
+          maker.
+        </h1>
+        <p className="text-lg text-slate-500 dark:text-slate-400">
+          Writer, Speaker, Developer, Mentor, and Founder of{" "}
+          <span className="inline-flex relative text-cdwmcp-blue before:absolute before:inset-0 before:bg-sky-200 dark:before:bg-cdwmcp-blue before:opacity-30 before:-z-10 before:-rotate-2 before:translate-y-1/4">
+            CodeDancingwithMilos.com
+          </span>
+          . I share insights on coding, the interview process, agile
+          methodologies, career development, and my journey as a full-time
+          creator.
+        </p>
+      </HeroBox>
       {/* Content */}
       <div className="grow md:flex space-y-8 md:space-y-0 md:space-x-8 pb-16 md:pb-20">
         {/* Middle area */}
         <div className="grow">
-          <div className="max-w-[700px]">
+          <div className="max-w-screen-2xl">
             <section>
               {/* Page title
             <h1 className="h1 font-aspekta mb-12">Nice stuff I've built</h1> */}
@@ -54,7 +81,7 @@ export default async function Home() {
                     JS|TS Ecosystem
                   </h2>
                   {/* Cards */}
-                  <div className="grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-5">
+                  <div className="grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5">
                     {getJavaScriptEcosystemContent?.map((item) => (
                       <Card key={item.metadata.topic} item={item.metadata} />
                     ))}
@@ -66,7 +93,7 @@ export default async function Home() {
                     .NET Ecosystem
                   </h2>
 
-                  <div className="grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-5">
+                  <div className="grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5">
                     {getDotNetEcosystemContent?.map((item) => (
                       <Card key={item.metadata.topic} item={item.metadata} />
                     ))}
