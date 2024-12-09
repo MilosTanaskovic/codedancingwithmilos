@@ -81,11 +81,13 @@ const ListItem = React.forwardRef<
 })
 ListItem.displayName = "ListItem"
 
-type NavMenuBoxProps = {};
+type NavMenuBoxProps = {
+  className?: string;
+};
 
-const NavMenuBox: React.FC<NavMenuBoxProps> = ({}) => {
+const NavMenuBox: React.FC<NavMenuBoxProps> = ({className}) => {
   return (
-    <NavigationMenu>
+    <NavigationMenu className={className}>
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="dark:text-slate-100">Startup Stories</NavigationMenuTrigger>

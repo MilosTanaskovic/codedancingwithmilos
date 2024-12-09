@@ -31,7 +31,7 @@ export default async function ReactJS() {
       <div className="grow md:flex space-y-8 md:space-y-0 md:space-x-8 pb-16 md:pb-20">
         {/* Middle area */}
         <div className="grow">
-          <div className="max-w-[700px]">
+          <div className="max-w-screen-md 2xl:max-w-screen-lg">
             <HeroLng pageContent={getReactJSPageContent[0]} />
 
             <div className="space-y-10">
