@@ -7,6 +7,7 @@ import {
   SidebarFooter,
   SidebarHeader,
   SidebarRail,
+  SidebarTrigger,
 } from "@/components/ui/sidebar";
 import Image from "next/image";
 import CodeDancingwithMilos_Logo from "@/public/images/codedancingwithmilos.jpg";
@@ -18,13 +19,12 @@ import { data } from "@/data/sidebar";
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar collapsible="icon" {...props}>
-      <SidebarHeader className=" flex flex-row items-center">
-        <AvatarLogo 
-            img={CodeDancingwithMilos_Logo}
-            alt="CodeDancing with Milos"
-            logoFallback="CDwM"
-            className=""
-
+      <SidebarHeader className=" flex flex-row self-center">
+        <AvatarLogo
+          img={CodeDancingwithMilos_Logo}
+          alt="CodeDancing with Milos"
+          logoFallback={"M"}
+          className="group-data-[collapsible=icon]:w-8 group-data-[collapsible=icon]:h-8 rounded-full"
         />
         {/* <div className="group-data-[collapsible=icon]:hidden flex flex-col items-center text-sm tracking-wider space-y-[-8px]">
             <span>CodeDancing</span> 
@@ -38,6 +38,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       </SidebarContent>
       <SidebarFooter>{/* <NavUser user={data.user} /> */}</SidebarFooter>
       <SidebarRail />
+      {/* <SidebarTrigger className="hidden sm:block" /> */}
     </Sidebar>
   );
 }
