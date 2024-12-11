@@ -36,7 +36,7 @@ export function NavMain({
   return (
     <SidebarGroup>
       <SidebarGroupLabel>Topics</SidebarGroupLabel>
-      <SidebarMenu>
+      <SidebarMenu className="">
         {items.map((item) => (
           <Collapsible
             key={item.title}
@@ -47,7 +47,7 @@ export function NavMain({
             <SidebarMenuItem>
               <CollapsibleTrigger asChild>
                 <SidebarMenuButton tooltip={item.title}>
-                  {item.icon && <item.icon />}
+                  {item.icon && <item.icon className="group-data-[collapsible=icon]:w-6 group-data-[collapsible=icon]:h-6" />}
                   <span>{item.title}</span>
                   <ChevronRight className="ml-auto transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90" />            
                 </SidebarMenuButton>

@@ -113,7 +113,6 @@ export default function RootLayout({
                 {/* <SideNavigation /> */}
                 <AppSidebar />
                 
-                <SidebarTrigger  className="hidden sm:block" />
                 {/* Main content */}
                 <main className="grow overflow-hidden px-6">
                   <div className="w-full h-full mx-auto flex flex-col">

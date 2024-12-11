@@ -16,7 +16,7 @@ import {
   Mail,
   Component,
   Braces,
-  Rocket
+  Rocket,
 } from "lucide-react";
 
 export const data = {
@@ -128,9 +128,9 @@ export const data = {
       icon: MailCheck,
     },
     {
-        name: "Startup Stories",
-        url: "/startup-stories",
-        icon: Rocket,
-      },
+      name: "Startup Stories",
+      url: "/startup-stories",
+      icon: Rocket,
+    },
   ],
 };

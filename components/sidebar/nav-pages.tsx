@@ -33,7 +33,7 @@ export function NavPages({
           <SidebarMenuItem key={page.name}>
             <SidebarMenuButton asChild tooltip={page.name}>
               <Link href={page.url}>
-                <page.icon />
+                <page.icon className="group-data-[collapsible=icon]:w-6 group-data-[collapsible=icon]:h-6" />
                 <span>{page.name}</span>
               </Link>
             </SidebarMenuButton>
