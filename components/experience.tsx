@@ -136,15 +136,15 @@ export default function Experience() {
                 <g
                   id="Page-1"
                   stroke="none"
-                  stroke-width="1"
+                  strokeWidth="1"
                   fill="none"
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                 >
                   <g
                     id="Salt-hemsida"
                     transform="translate(-250, -5130)"
                     fill="#FF7960"
-                    fill-rule="nonzero"
+                    fillRule="nonzero"
                   >
                     <g id="footer" transform="translate(0, 4991.1186)">
                       <path
